@@ -4,6 +4,8 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 0.3s;
+    outline: none;
+    border: none;
 }
 
 body {
@@ -31,6 +33,62 @@ nav ul li:hover {
 nav ul li a {
     text-decoration: none;
     color: white;
+}
+.displayer {
+    margin-block: 30px;
+    margin-inline: 210px;
+    height: 340px;
+}
+.displayer img {
+    width: 180px;
+    height: 280px;
+    float: left;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px black;    
+    margin-right: 80px;
+}
+.displayer ul {
+    height: 160px;
+}
+.displayer ul li {
+    color: white;
+    line-height: 60px;
+    font-size: 28px;
+    list-style: none;
+    padding-top: 20px;
+}
+.displayer button {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #181818;
+    border-radius: 20px;
+    width: 240px;
+}
+.displayer button a {
+    color: white;
+    text-decoration: none;
+}
+.displayer button:hover {
+    font-size: 26px;
+    background-color: #111;
+    box-shadow: 3px 3px 3px black;
+}
+
+@media (max-width: 1024px) {
+    .displayer {
+        margin-inline: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .displayer {
+        margin-inline: 0;
+    }
+    .displayer img {
+        margin-right: 40px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -71,6 +129,43 @@ nav ul li a {
         background-color: #111;
     }
     nav ul li a {
-        font-size: 45px;
+        font-size: 22px;
+    }
+    .displayer {
+        margin: 0;
+        padding: 20px;
+        height: 800px;
+    }
+    .displayer ul {
+        height: 60px;
+    }
+    .displayer img {
+        margin-right: 0;
+        float: none;
+        width: 260px;
+        height: 400px;
+        margin-bottom: 20px;
+        margin-left: 62.5px;
+    }
+    .displayer ul li {
+        font-size: 22px;
+        padding: 0;
+        line-height: 25px;
+        text-align: center;
+    }
+    .displayer ul li .title {
+        display: none;
+    }
+    .displayer ul li .title-text {
+        font-weight: bold;
+    }
+    .displayer ul li .author {
+        font-size: 18px;
+        font-style: italic;
+    }
+    .displayer button {
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
     }
 }
