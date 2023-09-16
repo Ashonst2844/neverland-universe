@@ -40,8 +40,8 @@ nav ul li a {
 .displayer {
     padding-top: 100px;
     margin-bottom: 30px;
-    margin-inline: 210px;
-    height: 340px;
+    padding-inline: 210px;
+    height: 380px;
 }
 .displayer img {
     width: 180px;
@@ -82,7 +82,7 @@ nav ul li a {
 /* For Laptop */
 @media (max-width: 1024px) {
     .displayer {
-        margin-inline: 90px;
+        padding-inline: 100px;
     }
 }
 
@@ -150,7 +150,7 @@ nav ul li a {
     .displayer {
         padding-top: 90px;
         padding-inline: 20px;
-        height: 800px;
+        height: 700px;
     }
     .displayer ul {
         height: 60px;
