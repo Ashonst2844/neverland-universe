@@ -79,6 +79,34 @@ nav ul li a {
     background-color: #111;
     box-shadow: 3px 3px 3px black;
 }
+footer {
+    background-color: #181818;
+    padding: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+footer ul li {
+    list-style:none ;
+    display: inline-block;
+    width: 50px;
+    font-size: 36px;
+    margin-inline: 30px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer ul li a .fa-whatsapp:hover {
+    color: rgb(13, 240, 13);
+}
+footer ul li a .fa-instagram:hover {
+    color: rgb(247, 24, 228);
+}
+footer ul li a .fa-github:hover {
+    color: rgb(0, 0, 0);
+}
+
 /* For Laptop */
 @media (max-width: 1024px) {
     .displayer {
@@ -183,6 +211,15 @@ nav ul li a {
         margin: 0;
         width: 100%;
         margin-top: 20px;
+    }
+    footer ul li {
+        margin-inline: 15px;
+    }
+    footer ul li a i {
+        font-size: 28px;
+    }
+    footer span {
+        font-size: 12px;
     }
 }
 
