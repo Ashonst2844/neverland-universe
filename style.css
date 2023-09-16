@@ -6,6 +6,7 @@
     transition: 0.3s;
     outline: none;
     border: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,7 @@ nav {
     background-color: rgba(24, 24, 24, 0.8);
     backdrop-filter: blur(10px);
     position: fixed;
+    z-index: 99999;
 }
 nav input, nav label {
     display: none;
@@ -84,6 +86,41 @@ nav ul li a {
     font-size: 26px;
     background-color: #111;
     box-shadow: 3px 3px 3px black;
+}
+#characters h2 {
+    font-size: 36px;
+    color: white;
+    padding: 20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+#characters .char-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+#characters .char-container .char-box {
+    width: 20%;
+    height: 20%;
+    margin-top: 10px;
+}
+#characters .char-container .char-box img {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    filter: grayscale(100%);
+}
+#characters .char-container .char-box img:hover {
+    filter: none;
+    cursor: pointer;
+}
+#characters .char-container .char-box figcaption {
+    font-size: 18px;
+    margin-top: -30px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-style: italic;
 }
 footer {
     background-color: #181818;

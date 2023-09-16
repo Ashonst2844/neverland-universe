@@ -12,13 +12,13 @@
             <input type="checkbox" name="check" id="check">
             <label for="check"><i class="fa-solid fa-bars"></i></label>
             <ul>
-                <li><a href="#">Book</a></li>
-                <li><a href="#">Timeline</a></li>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="displayer">
+        <div id="main" class="displayer">
             <img src="img/queens_cover.jpeg" alt="Queens Cover">
             <ul>
                 <li><span class="title">Title : </span></span class="title-text">Queen's Saga:Beloved Childs</span></li>
@@ -30,13 +30,16 @@
         <div class="line"></div>
         <div id="characters">
             <h2>Characters :</h2>
+            <div class="char-container" id="char-container">
+                <!-- imageLoop() Function Will Run Here!! -->
+            </div>
         </div>
-        <footer>
+        <footer id="contact">
             <h4>Contacts :</h4>
             <ul>
-                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/masagus_ahmad_r/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://github.com/Ashonst2844" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             </ul>
             <span>Copyright &copy; 2023 <b>Sasha2844</b> | All Rights Reserved.</span>
         </footer>
