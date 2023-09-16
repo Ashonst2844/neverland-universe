@@ -151,10 +151,24 @@ footer ul li a .fa-github:hover {
     color: rgb(0, 0, 0);
 }
 
-/* For Laptop */
+/* For Laptop L */
+@media (max-width: 1440px) {
+    #characters .char-container .char-box img {
+        height: 288px;
+    }
+}
+
+/* For Laptop M*/
 @media (max-width: 1024px) {
     .displayer {
         padding-inline: 100px;
+    }
+    #characters .char-container .char-box img {
+        height: 204.8px;
+    }
+    #characters .char-container .char-box figcaption {
+        font-size: 14px;
+        margin-left: 5px;
     }
 }
 
@@ -175,6 +189,17 @@ footer ul li a .fa-github:hover {
     }
     .displayer button {
         margin-left: 10px;
+    }
+    #characters .char-container .char-box {
+        width: 25%;
+        height: 25%;
+    }
+    #characters .char-container .char-box img {
+        height: 192px;
+    }
+    #characters .char-container .char-box figcaption {
+        font-size: 14px;
+        margin-left: 0;
     }
 }
 
@@ -265,12 +290,31 @@ footer ul li a .fa-github:hover {
     footer span {
         font-size: 12px;
     }
+    #characters h2 {
+        text-align: center;
+    }
+    #characters .char-container .char-box {
+        width: 50%;
+        height: 50%;
+    }
+
+    #characters .char-container .char-box img {
+        height: 212.5px;
+    }
+
+    #characters .char-container .char-box figcaption {
+        font-size: 14px;
+        margin-left: 0;
+    }
 }
 
 /* For Phone M */
 @media (max-width: 375px) {
     .displayer img {
         margin-left: 37.5px;
+    }
+    #characters .char-container .char-box img {
+        height: 187.5px;
     }
 }
 
@@ -282,5 +326,11 @@ footer ul li a .fa-github:hover {
     .displayer ul li {
         font-size: 18px;
         margin-top: 5px;
+    }
+    #characters .char-container .char-box img {
+        height: 160px;
+    }
+    #characters .char-container .char-box figcaption {
+        font-size: 12px;
     }
 }
