@@ -87,7 +87,7 @@ nav ul li a {
     background-color: #111;
     box-shadow: 3px 3px 3px black;
 }
-#characters h2 {
+.subhead {
     font-size: 36px;
     color: white;
     padding: 20px;
@@ -297,8 +297,9 @@ footer ul li a .fa-github:hover {
     footer span {
         font-size: 12px;
     }
-    #characters h2 {
+    .subhead {
         text-align: center;
+        font-size: 26px;
     }
     #characters .char-container .char-box {
         width: 50%;
