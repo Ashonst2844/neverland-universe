@@ -122,6 +122,28 @@ nav ul li a {
     text-shadow: 2px 2px 2px black;
     font-style: italic;
 }
+#credits .credits-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#credits .credits-container .credits-box {
+    width: 33.33%;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+#credits .credits-container .credits-box:hover {
+    background-color: #414141;
+}
+#credits .credits-container .credits-box h4 {
+    font-style: italic;
+}
+#credits .credits-container .credits-box ul li {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 10px;
+}
 footer {
     background-color: #181818;
     margin-top: 10px;
@@ -314,6 +336,12 @@ footer ul li a .fa-github:hover {
         font-size: 14px;
         margin-left: 0;
     }
+    #credits .credits-container .credits-box {
+        width: 50%;
+    }
+    #credits .credits-container .credits-box ul li {
+        font-size: 14px;
+    }
 }
 
 /* For Phone M */
@@ -323,6 +351,9 @@ footer ul li a .fa-github:hover {
     }
     #characters .char-container .char-box img {
         height: 187.5px;
+    }
+    #credits .credits-container .credits-box ul li {
+        font-size: 12px;
     }
 }
 
@@ -340,5 +371,11 @@ footer ul li a .fa-github:hover {
     }
     #characters .char-container .char-box figcaption {
         font-size: 12px;
+    }
+    #credits .credits-container .credits-box {
+        width: 100%;
+    }
+    #credits .credits-container .credits-box ul li {
+        font-size: 18px;
     }
 }
