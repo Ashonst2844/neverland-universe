@@ -227,7 +227,7 @@ footer ul li a .fa-github:hover {
         background-color: #111;
     }
     nav label i {
-        margin-top: 12.5px;
+        margin-block: 12.5px;
         font-size: 45px;
         color: white;
     }
