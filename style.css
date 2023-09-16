@@ -151,14 +151,21 @@ footer ul li a .fa-github:hover {
     color: rgb(0, 0, 0);
 }
 
-/* For Laptop L */
+/* For Laptop L*/
 @media (max-width: 1440px) {
     #characters .char-container .char-box img {
         height: 288px;
     }
 }
 
-/* For Laptop M*/
+/* For Laptop M */
+@media (max-width: 1366px) {
+    #characters .char-container .char-box img {
+        height: 256px;
+    }
+}
+
+/* For Laptop S*/
 @media (max-width: 1024px) {
     .displayer {
         padding-inline: 100px;
