@@ -1,3 +1,12 @@
+:root {
+    --bg-: #232323;
+    --main-: #181818;
+    --main-2-: #181818cc;
+    --hover-: #111;
+    --hover-2-: #414141;
+    --text-: #fff;
+    --shadow-: 3px 3px 3px black;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,15 +16,16 @@
     outline: none;
     border: none;
     scroll-behavior: smooth;
+    color: var(--text-);
 }
 
 body {
-    background-color: #232323;
+    background-color: var(--bg-);
 }
 .line {
     height: 10px;
     width: 100%;
-    background-color: #181818;
+    background-color: var(--main-);
     margin-block: 10px;
 }
 
@@ -23,7 +33,7 @@ body {
 nav {
     width: 100%;
     height: 70px;
-    background-color: rgba(24, 24, 24, 0.8);
+    background-color: var(--main-2-);
     backdrop-filter: blur(10px);
     position: fixed;
     z-index: 99999;
@@ -34,21 +44,17 @@ nav input, nav label {
 nav ul li {
     text-transform: uppercase;
     display: inline-block;
-    font-size: 26px;
-    line-height: 70px;
+    font: 26px/70px Verdana;
     padding-inline: 20px;
 }
 nav ul li:hover {
-    background-color: #111;
+    background-color: var(--hover-);
 }
 nav ul li a {
     text-decoration: none;
-    color: white;
 }
 .displayer {
-    padding-top: 100px;
-    margin-bottom: 30px;
-    padding-inline: 210px;
+    padding: 100px 210px 30px;
     height: 380px;
 }
 .displayer img {
@@ -56,42 +62,36 @@ nav ul li a {
     height: 280px;
     float: left;
     border-radius: 20px;
-    box-shadow: 3px 3px 3px black;    
+    box-shadow: var(--shadow-);    
     margin-right: 80px;
 }
 .displayer ul {
     height: 160px;
 }
 .displayer ul li {
-    color: white;
-    line-height: 60px;
-    font-size: 28px;
+    font: 28px/60px Verdana;
     list-style: none;
     padding-top: 20px;
 }
 .displayer button {
-    margin-top: 50px;
-    margin-left: 20px;
+    margin: 50px 0 0 20px;
     font-size: 20px;
     padding: 10px;
-    background-color: #181818;
+    background-color: var(--main-);
     border-radius: 20px;
     width: 240px;
 }
 .displayer button a {
-    color: white;
     text-decoration: none;
 }
 .displayer button:hover {
     font-size: 26px;
-    background-color: #111;
-    box-shadow: 3px 3px 3px black;
+    background-color: var(--hover-);
+    box-shadow: var(--shadow-);
 }
 .subhead {
-    font-size: 36px;
-    color: white;
+    font: italic 36px;
     padding: 20px;
-    font-style: italic;
     text-decoration: underline;
 }
 #map .map-container {
@@ -116,7 +116,7 @@ nav ul li a {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(24, 24, 24, 0.8);
+    background-color: var(--main-2-);
     backdrop-filter: blur(10px);
     width: 100%;
     height: 100vh;
@@ -139,17 +139,15 @@ nav ul li a {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #181818;
+    background-color: var(--main-);
     top: 90px;
     right: 20px;
 }
 #map-overlay button:hover {
-    background-color: #111;
+    background-color: var(--hover-);
 }
 #map-overlay button a {
-    font-size: 22px;
-    color: white;
-    font-weight: bold;
+    font: bold 22px;
     text-decoration: none;
 }
 #map .map-container .map-box .radio-region {
@@ -163,34 +161,28 @@ nav ul li a {
 #map .map-container .map-box .radio-region label {
     width: 25%;
     font-size: 22px;
-    color: white;
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
 }
-#map .map-container .map-box .radio-region label:hover {
-    background-color: rgba(17, 17, 17, 0.5);
-}
-#map .map-container .map-box .radio-region input:checked + label {
-    background-color: #111;
+#map .map-container .map-box .radio-region label:hover,
+#map .map-container .map-box .radio-region input:checked+label {
+    background-color: var(--hover-);
 }
 #map .map-container .map-box .desc-box {
     display: none;
-    background-color: #111;
+    background-color: var(--hover-);
     height: 350px;
 }
 #map .map-container .map-box .desc-box h3 {
-    font-size: 28px;
+    font: italic 28px;
     text-align: center;
     padding: 20px;
-    color: white;
     text-decoration: underline;
-    font-style: italic;
     text-transform: uppercase;
 }
 #map .map-container .map-box .desc-box p {
     font-size: 14px;
-    color: white;
     padding: 10px;
 }
 #characters .char-container {
@@ -213,13 +205,9 @@ nav ul li a {
     cursor: pointer;
 }
 #characters .char-container .char-box figcaption {
-    font-size: 18px;
-    margin-top: -30px;
-    margin-left: 10px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    font-style: italic;
+    font: italic bold 18px;
+    margin: -30px 0 0 10px;
+    text-shadow: var(--shadow-);
 }
 #credits .credits-container{
     display: flex;
@@ -228,12 +216,11 @@ nav ul li a {
 }
 #credits .credits-container .credits-box {
     width: 33.33%;
-    color: white;
     margin-top: 20px;
     padding: 10px;
 }
 #credits .credits-container .credits-box:hover {
-    background-color: #414141;
+    background-color: var(--hover-2-);
 }
 #credits .credits-container .credits-box h4 {
     font-style: italic;
@@ -244,12 +231,11 @@ nav ul li a {
     margin-left: 10px;
 }
 footer {
-    background-color: #181818;
+    background-color: var(--main-);
     margin-top: 10px;
     padding: 10px;
     text-align: center;
     line-height: 50px;
-    color: white;
 }
 footer ul li {
     list-style:none ;
@@ -260,7 +246,6 @@ footer ul li {
 }
 footer ul li a {
     text-decoration: none;
-    color: white;
 }
 footer ul li a .fa-whatsapp:hover {
     color: rgb(13, 240, 13);
@@ -305,9 +290,8 @@ footer ul li a .fa-github:hover {
         width: 50%;
     }
     #map .map-container .map-box .radio-region label {
+        font: 15px/40px Verdana;
         padding: 0;
-        line-height: 40px;
-        font-size: 15px;
     }
     #map .map-container .map-box .desc-box {
         height: 375px;
@@ -370,19 +354,18 @@ footer ul li a .fa-github:hover {
         padding-inline: 10px;
     }
     nav label:hover {
-        background-color: #111;
+        background-color: var(--hover-);
     }
     nav label i {
         margin-block: 12.5px;
         font-size: 45px;
-        color: white;
     }
     nav ul {
         position: fixed;
         left: -100%;
         height: 100vh;
         width: 100%;
-        background-color: #181818;
+        background-color: var(--main-);
     }
     #check:checked ~ ul {
         left: 0;
@@ -392,7 +375,7 @@ footer ul li a .fa-github:hover {
         display: block;
     }
     nav ul li:hover {
-        background-color: #111;
+        background-color: var(--hover-);
     }
     nav ul li a {
         font-size: 22px;
@@ -406,17 +389,14 @@ footer ul li a .fa-github:hover {
         height: 60px;
     }
     .displayer img {
-        margin-right: 0;
+        margin: 0 0 20px 62.5px;
         float: none;
         width: 260px;
         height: 400px;
-        margin-bottom: 20px;
-        margin-left: 62.5px;
     }
     .displayer ul li {
-        font-size: 22px;
+        font: 22px/25px Verdana;
         padding: 0;
-        line-height: 25px;
         text-align: center;
     }
     .displayer ul li .title {
@@ -426,13 +406,11 @@ footer ul li a .fa-github:hover {
         font-weight: bold;
     }
     .displayer ul li .author {
-        font-size: 18px;
-        font-style: italic;
+        font: italic 18px;
     }
     .displayer button {
-        margin: 0;
+        margin: 20px 0 0 0;
         width: 100%;
-        margin-top: 20px;
     }
     .subhead {
         text-align: center;
@@ -444,9 +422,7 @@ footer ul li a .fa-github:hover {
     #map .map-container .map-box a img {
         width: 400px;
         height: 400px;
-        margin-inline: 12.5px;
-        margin-block: 0;
-        margin-bottom: 20px;
+        margin: 0 12.5px 20px;
     }
     #map-overlay p img {
         width: 100%;
