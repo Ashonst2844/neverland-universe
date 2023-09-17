@@ -94,6 +94,105 @@ nav ul li a {
     font-style: italic;
     text-decoration: underline;
 }
+#map .map-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#map .map-container .map-box:first-child {
+    width: 40%;
+}
+#map .map-container .map-box:last-child {
+    width: 60%;
+}
+#map .map-container .map-box a img {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    float: right;
+}
+#map-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(24, 24, 24, 0.8);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    z-index: 555;
+    padding-top: 80px;
+}
+#map-overlay:target {
+    display: block;
+}
+#map-overlay p {
+    text-align: center;
+}
+#map-overlay p img {
+    width: 550px;
+    height: 550px;
+    vertical-align: middle;
+}
+#map-overlay button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #181818;
+    top: 90px;
+    right: 20px;
+}
+#map-overlay button:hover {
+    background-color: #111;
+}
+#map-overlay button a {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+#map .map-container .map-box .radio-region {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#map .map-container .map-box .radio-region input {
+    display: none;
+}
+#map .map-container .map-box .radio-region label {
+    width: 25%;
+    font-size: 22px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#map .map-container .map-box .radio-region label:hover {
+    background-color: rgba(17, 17, 17, 0.5);
+}
+#map .map-container .map-box .radio-region input:checked + label {
+    background-color: #111;
+}
+#map .map-container .map-box .desc-box {
+    display: none;
+    background-color: #111;
+    height: 350px;
+}
+#map .map-container .map-box .desc-box h3 {
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+    text-transform: uppercase;
+}
+#map .map-container .map-box .desc-box p {
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+}
 #characters .char-container {
     display: flex;
     flex-wrap: wrap;
@@ -199,12 +298,26 @@ footer ul li a .fa-github:hover {
         font-size: 14px;
         margin-left: 5px;
     }
+    #map .map-container .map-box:first-child {
+        width: 50%;
+    }
+    #map .map-container .map-box:last-child {
+        width: 50%;
+    }
+    #map .map-container .map-box .radio-region label {
+        padding: 0;
+        line-height: 40px;
+        font-size: 15px;
+    }
+    #map .map-container .map-box .desc-box {
+        height: 375px;
+    }
 }
 
 /* For Tablet */
 @media (max-width: 768px) {
     nav ul li a {
-        font-size: 22px;
+        font-size: 18px;
     }
     .displayer {
         margin-inline: 0;
@@ -219,6 +332,14 @@ footer ul li a .fa-github:hover {
     .displayer button {
         margin-left: 10px;
     }
+    #map .map-container .map-box a img {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+    }
+    #map .map-container .map-box .radio-region label {
+        font-size: 12px;
+    }
     #characters .char-container .char-box {
         width: 25%;
         height: 25%;
@@ -229,6 +350,9 @@ footer ul li a .fa-github:hover {
     #characters .char-container .char-box figcaption {
         font-size: 14px;
         margin-left: 0;
+    }
+    #map .map-container .map-box .desc-box {
+        height: 275px;
     }
 }
 
@@ -310,18 +434,33 @@ footer ul li a .fa-github:hover {
         width: 100%;
         margin-top: 20px;
     }
-    footer ul li {
-        margin-inline: 15px;
-    }
-    footer ul li a i {
-        font-size: 28px;
-    }
-    footer span {
-        font-size: 12px;
-    }
     .subhead {
         text-align: center;
         font-size: 26px;
+    }
+    #map .map-container .map-box {
+        width: 100%;
+    }
+    #map .map-container .map-box a img {
+        width: 400px;
+        height: 400px;
+        margin-inline: 12.5px;
+        margin-block: 0;
+        margin-bottom: 20px;
+    }
+    #map-overlay p img {
+        width: 100%;
+        height: 425px;
+        margin-top: 20px;
+    }
+    #map .map-container .map-box:first-child {
+        width: 100%;
+    }
+    #map .map-container .map-box:last-child {
+        width: 100%;
+    }
+    #map .map-container .map-box .radio-region label {
+        font-size: 12px;
     }
     #characters .char-container .char-box {
         width: 50%;
@@ -342,12 +481,30 @@ footer ul li a .fa-github:hover {
     #credits .credits-container .credits-box ul li {
         font-size: 14px;
     }
+    footer ul li {
+        margin-inline: 15px;
+    }
+
+    footer ul li a i {
+        font-size: 28px;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
 }
 
 /* For Phone M */
 @media (max-width: 375px) {
     .displayer img {
         margin-left: 37.5px;
+    }
+    #map .map-container .map-box a img {
+        width: 350px;
+        height: 350px;
+    }
+    #map-overlay p img {
+        height: 375px;
     }
     #characters .char-container .char-box img {
         height: 187.5px;
@@ -365,6 +522,19 @@ footer ul li a .fa-github:hover {
     .displayer ul li {
         font-size: 18px;
         margin-top: 5px;
+    }
+    #map .map-container .map-box a img {
+        width: 300px;
+        height: 300px;
+        margin-inline: 10px;
+    }
+    #map-overlay p img {
+        height: 320px;
+    }
+    #map .map-container .map-box .radio-region label {
+        width: 50%;
+        font-size: 18px;
+        padding: 10px;
     }
     #characters .char-container .char-box img {
         height: 160px;

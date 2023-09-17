@@ -13,7 +13,6 @@
             <label for="check"><i class="fa-solid fa-bars"></i></label>
             <ul>
                 <li><a href="#main">Main</a></li>
-                <li><a href="#timeline">Timeline</a></li>
                 <li><a href="#map">Map</a></li>
                 <li><a href="#characters">Characters</a></li>
                 <li><a href="#credits">Credits</a></li>
@@ -30,12 +29,41 @@
             <button><a href="https://file.io/P4GwKE7Nm38S" target="_blank">Download</a></button>
         </div>
         <div class="line"></div>
-        <div id="timeline">
-            <h2 class="subhead">Timeline :</h2>
-        </div>
-        <div class="line"></div>
         <div id="map">
             <h2 class="subhead">Map :</h2>
+            <div class="map-container">
+                <div class="map-box">
+                    <a href="#map-overlay"><img src="img/vollenvorth_map.jpg" alt="Vonllenvorth Map"></a>
+                    <div id="map-overlay">
+                        <p><img src="img/vollenvorth_map.jpg" alt="Vollenvorth Map"></p>
+                        <button><a href="#map"><i class="fa-solid fa-x"></i></a></button>
+                    </div>
+                </div>
+                <div class="map-box">
+                    <div class="radio-region">
+                        <input type="radio" name="reg" id="dorchester" value="dorchestre" onclick="regionDesc('1')"><label for="dorchester">Dorchester</label>
+                        <input type="radio" name="reg" id="höfferlandt" value="höfferlandt" onclick="regionDesc('2')"><label for="höfferlandt">Höfferlandt</label>
+                        <input type="radio" name="reg" id="sciermicz" value="sciermicz" onclick="regionDesc('3')"><label for="sciermicz">Sciermicz</label>
+                        <input type="radio" name="reg" id="aeslarent" value="aeslarent" onclick="regionDesc('4')"><label for="aeslarent">Aeslarent</label>
+                    </div>
+                    <div class="desc-box" id="reg-1">
+                        <h3>Dorchester</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam totam dolorum dolores non temporibus distinctio laudantium, ex tempora! Asperiores reprehenderit doloremque suscipit nesciunt.</p>
+                    </div>
+                    <div class="desc-box" id="reg-2">
+                        <h3>Höfferlandt</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam totam dolorum dolores non temporibus distinctio laudantium, ex tempora! Asperiores reprehenderit doloremque suscipit nesciunt.</p>
+                    </div>
+                    <div class="desc-box" id="reg-3">
+                        <h3>Sciermicz</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam totam dolorum dolores non temporibus distinctio laudantium, ex tempora! Asperiores reprehenderit doloremque suscipit nesciunt.</p>
+                    </div>
+                    <div class="desc-box" id="reg-4">
+                        <h3>Aeslarent</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam totam dolorum dolores non temporibus distinctio laudantium, ex tempora! Asperiores reprehenderit doloremque suscipit nesciunt.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="line"></div>
         <div id="characters">

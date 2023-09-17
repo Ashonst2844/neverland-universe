@@ -42,4 +42,34 @@ function imageLoop() {
     
 }
 
+function regionDesc(index) {
+    let dorc = document.getElementById("reg-1");
+    let höff = document.getElementById("reg-2");
+    let scie = document.getElementById("reg-3");
+    let aesl = document.getElementById("reg-4");
+
+    if (index == '1') {
+        dorc.style.display = "block"
+        höff.style.display = "none"
+        scie.style.display = "none"
+        aesl.style.display = "none"
+        
+    } else if (index == '2') {
+        höff.style.display = "block"
+        dorc.style.display = "none"
+        scie.style.display = "none"
+        aesl.style.display = "none"
+    } else if (index == '3') {
+        scie.style.display = "block"
+        höff.style.display = "none"
+        dorc.style.display = "none"
+        aesl.style.display = "none"
+    } else if (index == '4') {
+        aesl.style.display = "block"
+        höff.style.display = "none"
+        scie.style.display = "none"
+        dorc.style.display = "none"
+    }
+}
+
 imageLoop()
