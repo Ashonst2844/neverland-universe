@@ -1,3 +1,5 @@
+/* Core
+-------------------------------*/
 :root {
     --bg-: #232323;
     --main-: #181818;
@@ -28,8 +30,17 @@ body {
     background-color: var(--main-);
     margin-block: 10px;
 }
+.subhead {
+    font: italic 36px;
+    padding: 20px;
+    text-decoration: underline;
+}
 
-/* Default */
+/* DEFAULT RESOLUTION :
+-------------------------------*/
+
+/* Navigation Section
+-------------------------------*/
 nav {
     width: 100%;
     height: 70px;
@@ -53,6 +64,9 @@ nav ul li:hover {
 nav ul li a {
     text-decoration: none;
 }
+
+/* Displayer Section
+-------------------------------*/
 .displayer {
     padding: 100px 210px 30px;
     height: 380px;
@@ -89,11 +103,9 @@ nav ul li a {
     background-color: var(--hover-);
     box-shadow: var(--shadow-);
 }
-.subhead {
-    font: italic 36px;
-    padding: 20px;
-    text-decoration: underline;
-}
+
+/* Map Section
+-------------------------------*/
 #map .map-container {
     display: flex;
     flex-wrap: wrap;
@@ -111,6 +123,44 @@ nav ul li a {
     margin: 20px;
     float: right;
 }
+#map .map-container .map-box .radio-region {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#map .map-container .map-box .radio-region input {
+    display: none;
+}
+#map .map-container .map-box .radio-region label {
+    width: 25%;
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#map .map-container .map-box .radio-region label:hover,
+#map .map-container .map-box .radio-region input:checked+label {
+    background-color: var(--hover-);
+}
+#map .map-container .map-box .desc-box {
+    display: none;
+    background-color: var(--hover-);
+    height: 350px;
+}
+#map .map-container .map-box .desc-box h3 {
+    font: italic 28px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#map .map-container .map-box .desc-box p {
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Map Overlay
+-------------------------------*/
 #map-overlay {
     display: none;
     position: fixed;
@@ -150,41 +200,9 @@ nav ul li a {
     font: bold 22px;
     text-decoration: none;
 }
-#map .map-container .map-box .radio-region {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-#map .map-container .map-box .radio-region input {
-    display: none;
-}
-#map .map-container .map-box .radio-region label {
-    width: 25%;
-    font-size: 22px;
-    padding: 20px;
-    text-align: center;
-    text-transform: uppercase;
-}
-#map .map-container .map-box .radio-region label:hover,
-#map .map-container .map-box .radio-region input:checked+label {
-    background-color: var(--hover-);
-}
-#map .map-container .map-box .desc-box {
-    display: none;
-    background-color: var(--hover-);
-    height: 350px;
-}
-#map .map-container .map-box .desc-box h3 {
-    font: italic 28px;
-    text-align: center;
-    padding: 20px;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-#map .map-container .map-box .desc-box p {
-    font-size: 14px;
-    padding: 10px;
-}
+
+/* Characters Section
+-------------------------------*/
 #characters .char-container {
     display: flex;
     flex-wrap: wrap;
@@ -209,6 +227,9 @@ nav ul li a {
     margin: -30px 0 0 10px;
     text-shadow: var(--shadow-);
 }
+
+/* Credits Section
+-------------------------------*/
 #credits .credits-container{
     display: flex;
     flex-wrap: wrap;
@@ -230,6 +251,9 @@ nav ul li a {
     list-style: none;
     margin-left: 10px;
 }
+
+/* Footer + Contact Section
+-------------------------------*/
 footer {
     background-color: var(--main-);
     margin-top: 10px;
@@ -257,25 +281,40 @@ footer ul li a .fa-github:hover {
     color: rgb(0, 0, 0);
 }
 
-/* For Laptop L*/
+/* LAPTOP L RESOLUTION :
+-------------------------------*/
+
 @media (max-width: 1440px) {
+    /* Character Section
+    -------------------------------*/
     #characters .char-container .char-box img {
         height: 288px;
     }
 }
 
-/* For Laptop M */
+/* LAPTOP M RESOLUTION :
+-------------------------------*/
+
 @media (max-width: 1366px) {
+    /* Character Section
+    -------------------------------*/
     #characters .char-container .char-box img {
         height: 256px;
     }
 }
 
-/* For Laptop S*/
+/* LAPTOP S RESOLUTION :
+-------------------------------*/
+
 @media (max-width: 1024px) {
+    /* Displayer Section
+    -------------------------------*/
     .displayer {
         padding-inline: 100px;
     }
+
+    /* Character Section
+    -------------------------------*/
     #characters .char-container .char-box img {
         height: 204.8px;
     }
@@ -283,6 +322,9 @@ footer ul li a .fa-github:hover {
         font-size: 14px;
         margin-left: 5px;
     }
+
+    /* Map Section
+    -------------------------------*/
     #map .map-container .map-box:first-child {
         width: 50%;
     }
@@ -298,11 +340,18 @@ footer ul li a .fa-github:hover {
     }
 }
 
-/* For Tablet */
+/* LAPTOP TABLET :
+-------------------------------*/
+
 @media (max-width: 768px) {
+    /* Navigation Section
+    -------------------------------*/
     nav ul li a {
         font-size: 18px;
     }
+
+    /* Displayer Section
+    -------------------------------*/
     .displayer {
         margin-inline: 0;
         padding-inline: 20px;
@@ -316,6 +365,9 @@ footer ul li a .fa-github:hover {
     .displayer button {
         margin-left: 10px;
     }
+
+    /* Map Section
+    -------------------------------*/
     #map .map-container .map-box a img {
         width: 300px;
         height: 300px;
@@ -324,6 +376,12 @@ footer ul li a .fa-github:hover {
     #map .map-container .map-box .radio-region label {
         font-size: 12px;
     }
+    #map .map-container .map-box .desc-box {
+        height: 275px;
+    }
+
+    /* Character Section
+    -------------------------------*/
     #characters .char-container .char-box {
         width: 25%;
         height: 25%;
@@ -335,13 +393,20 @@ footer ul li a .fa-github:hover {
         font-size: 14px;
         margin-left: 0;
     }
-    #map .map-container .map-box .desc-box {
-        height: 275px;
-    }
 }
 
-/* For Phone L*/
+/* PHONE L RESOLUTION :
+-------------------------------*/
 @media (max-width: 425px) {
+    /* Subcore
+    -------------------------------*/
+    .subhead {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    /* Navigations Section
+    -------------------------------*/
     nav label {
         display: block;
     }
@@ -380,6 +445,9 @@ footer ul li a .fa-github:hover {
     nav ul li a {
         font-size: 22px;
     }
+
+    /* Displayer Section
+    -------------------------------*/
     .displayer {
         padding-top: 90px;
         padding-inline: 20px;
@@ -412,10 +480,9 @@ footer ul li a .fa-github:hover {
         margin: 20px 0 0 0;
         width: 100%;
     }
-    .subhead {
-        text-align: center;
-        font-size: 26px;
-    }
+
+    /* Map Section
+    -------------------------------*/
     #map .map-container .map-box {
         width: 100%;
     }
@@ -423,11 +490,6 @@ footer ul li a .fa-github:hover {
         width: 400px;
         height: 400px;
         margin: 0 12.5px 20px;
-    }
-    #map-overlay p img {
-        width: 100%;
-        height: 425px;
-        margin-top: 20px;
     }
     #map .map-container .map-box:first-child {
         width: 100%;
@@ -438,60 +500,93 @@ footer ul li a .fa-github:hover {
     #map .map-container .map-box .radio-region label {
         font-size: 12px;
     }
+
+    /* Map Overlay
+    -------------------------------*/
+    #map-overlay p img {
+        width: 100%;
+        height: 425px;
+        margin-top: 20px;
+    }
+
+    /* Character Section
+    -------------------------------*/
     #characters .char-container .char-box {
         width: 50%;
         height: 50%;
     }
-
     #characters .char-container .char-box img {
         height: 212.5px;
     }
-
     #characters .char-container .char-box figcaption {
         font-size: 14px;
         margin-left: 0;
     }
+
+    /* Credit Section
+    -------------------------------*/
     #credits .credits-container .credits-box {
         width: 50%;
     }
     #credits .credits-container .credits-box ul li {
         font-size: 14px;
     }
+
+    /* Footer + Contact Section
+    -------------------------------*/
     footer ul li {
         margin-inline: 15px;
     }
-
     footer ul li a i {
         font-size: 28px;
     }
-
     footer span {
         font-size: 12px;
     }
 }
 
-/* For Phone M */
+/* PHONE M RESOLUTION :
+-------------------------------*/
+
 @media (max-width: 375px) {
+    /* Displayer Section
+    -------------------------------*/
     .displayer img {
         margin-left: 37.5px;
     }
+
+    /* Map Section
+    -------------------------------*/
     #map .map-container .map-box a img {
         width: 350px;
         height: 350px;
     }
+
+    /* Map Overlay
+    -------------------------------*/
     #map-overlay p img {
         height: 375px;
     }
+
+    /* Character Section
+    -------------------------------*/
     #characters .char-container .char-box img {
         height: 187.5px;
     }
+
+    /* Credit Section
+    -------------------------------*/
     #credits .credits-container .credits-box ul li {
         font-size: 12px;
     }
 }
 
-/* For Phone S */
+/* PHONE S RESOLUTION:
+-------------------------------*/
+
 @media (max-width: 320px) {
+    /* Displayer Section
+    -------------------------------*/
     .displayer img {
         margin-left: 10px;
     }
@@ -499,25 +594,37 @@ footer ul li a .fa-github:hover {
         font-size: 18px;
         margin-top: 5px;
     }
+
+    /* Map Section
+    -------------------------------*/
     #map .map-container .map-box a img {
         width: 300px;
         height: 300px;
         margin-inline: 10px;
-    }
-    #map-overlay p img {
-        height: 320px;
     }
     #map .map-container .map-box .radio-region label {
         width: 50%;
         font-size: 18px;
         padding: 10px;
     }
+
+    /* Map Overlay
+    -------------------------------*/
+    #map-overlay p img {
+        height: 320px;
+    }
+
+    /* Character Section
+    -------------------------------*/
     #characters .char-container .char-box img {
         height: 160px;
     }
     #characters .char-container .char-box figcaption {
         font-size: 12px;
     }
+
+    /* Credit Section
+    -------------------------------*/
     #credits .credits-container .credits-box {
         width: 100%;
     }

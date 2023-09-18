@@ -4,13 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sasha2844 - Neverland Universe</title>
+        <!---- Style Link ---->
         <link rel="stylesheet" href="style.css" />
-        <script src="https://kit.fontawesome.com/7ea424b8bb.js" crossorigin="anonymous"></script>
     </head>
     <body>
+
+        <!---- Navigation Section ---->
         <nav>
             <input type="checkbox" name="check" id="check">
             <label for="check"><i class="fa-solid fa-bars"></i></label>
+            <!---- Navigations List ---->
             <ul>
                 <li><a href="#main">Main</a></li>
                 <li><a href="#map">Map</a></li>
@@ -19,6 +22,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <!---- Displayer Section ---->
         <div id="main" class="displayer">
             <img src="img/queens_cover.jpeg" alt="Queens Cover">
             <ul>
@@ -28,10 +33,14 @@
             <button><a href="https://editor.reedsy.com/s/4KHMnQp" target="_blank">Read</a></button>
             <button><a href="https://file.io/P4GwKE7Nm38S" target="_blank">Download</a></button>
         </div>
+
         <div class="line"></div>
+        
+        <!---- Map Section ---->
         <div id="map">
             <h2 class="subhead">Map :</h2>
             <div class="map-container">
+                <!---- Map Left Side : Map Thumbnail ---->
                 <div class="map-box">
                     <a href="#map-overlay"><img src="img/vollenvorth_map.jpg" alt="Vonllenvorth Map"></a>
                     <div id="map-overlay">
@@ -39,13 +48,16 @@
                         <button><a href="#map"><i class="fa-solid fa-x"></i></a></button>
                     </div>
                 </div>
+                <!---- Map Right Side : Region Description ---->
                 <div class="map-box">
+                    <!---- Regions Navigation ---->
                     <div class="radio-region">
                         <input type="radio" name="reg" id="dorchester" value="dorchestre" onclick="regionDesc('1')"><label for="dorchester">Dorchester</label>
                         <input type="radio" name="reg" id="höfferlandt" value="höfferlandt" onclick="regionDesc('2')"><label for="höfferlandt">Höfferlandt</label>
                         <input type="radio" name="reg" id="sciermicz" value="sciermicz" onclick="regionDesc('3')"><label for="sciermicz">Sciermicz</label>
                         <input type="radio" name="reg" id="aeslarent" value="aeslarent" onclick="regionDesc('4')"><label for="aeslarent">Aeslarent</label>
                     </div>
+                    <!---- Regions Description ---->
                     <div class="desc-box" id="reg-1">
                         <h3>Dorchester</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam totam dolorum dolores non temporibus distinctio laudantium, ex tempora! Asperiores reprehenderit doloremque suscipit nesciunt.</p>
@@ -65,14 +77,20 @@
                 </div>
             </div>
         </div>
+
         <div class="line"></div>
+
+        <!---- Character Section ---->
         <div id="characters">
             <h2 class="subhead">Characters :</h2>
             <div class="char-container" id="char-container">
-                <!-- imageLoop() Function Will Run Here!! -->
+                <!---- imageLoop() Function Will Run Here!! ---->
             </div>
         </div>
+
         <div class="line"></div>
+
+        <!---- Credit Section ---->
         <div id="credits">
             <h2 class="subhead">Credits :</h2>
             <div class="credits-container">
@@ -126,6 +144,8 @@
                 </div>
             </div>
         </div>
+
+        <!---- Footer + Contact Section ---->
         <footer id="contact">
             <h4>Contacts :</h4>
             <ul>
@@ -136,6 +156,8 @@
             <span>Copyright &copy; 2023 <b>Sasha2844</b> | All Rights Reserved.</span>
         </footer>
 
+        <!---- Script Link ---->
         <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/7ea424b8bb.js" crossorigin="anonymous"></script>
     </body>
 </html>

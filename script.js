@@ -1,75 +1,66 @@
 function imageLoop() {
-    let totalIndex = 6
-    let name = ""
 
-    for (let i = 1; i <= totalIndex; i++) {
-        switch (i) {
-            case 1:
-                name = "Aarth Van Luiken"
-                break;
-            case 2:
-                name = "Annatasyah Van Luiken"
-                break;
-            case 3:
-                name = "Eleanor De Louise"
-                break;
-            case 4:
-                name = "Marcus Crist Valovell"
-                break;
-            case 5:
-                name = "Marrionette Van Luiken"
-                break;
-            case 6:
-                name = "Nathan De Säuberlich"
-                break;
-            default:
-                break;
-        }
-        let parent = document.getElementById("char-container");
-        let childs = document.createElement("div");
-        childs.className = "char-box";
-        let image = document.createElement("img")
-        image.setAttribute("src", "img/Characters/" + i + ".jpeg");
-        let caption = document.createElement("figcaption");
-        caption.innerHTML = name;
+    // Characters Name List
+    let names = [
+        "Aarth Van Luiken",
+        "Annatasyah Van Luiken",
+        "Eleanor De Louise",
+        "Marcus Crist Valovell",
+        "Marrionette Van Luiken",
+        "Nathan De Säuberlich"
+    ]
+
+    const parent = document.getElementById("char-container"); // Declarating Parent Elements
+
+    // Set For Loop 
+    for (let i = 1; i <= names.length; i++) {
+
+        // Create Childs Element And Setting The Class To char-box
+        const childs = document.createElement("div");
+        childs.className = "char-box"
+
+        // Create Image Element And Make It Syncronyz To index
+        const image = document.createElement("img");
+        image.setAttribute("src", "img/Characters/"+i+".jpeg")
+
+        // Create Name Caption To Image
+        const caption = document.createElement("figcaption");
+        caption.innerText = names[i - 1]
         
-        childs.appendChild(image);
-        childs.appendChild(caption);
+        // Append Image & Caption To Childs Element
+        childs.appendChild(image)
+        childs.appendChild(caption)
 
-        parent.appendChild(childs);
+        // Append Child To Parent Element
+        parent.appendChild(childs)
     }
-
-    
 }
 
+// Region Description Navigation Control Function
 function regionDesc(index) {
-    let dorc = document.getElementById("reg-1");
-    let höff = document.getElementById("reg-2");
-    let scie = document.getElementById("reg-3");
-    let aesl = document.getElementById("reg-4");
 
-    if (index == '1') {
+    let dorc = document.getElementById("reg-1"); // Declarating Dorchester Element
+    let höff = document.getElementById("reg-2"); // Declarating Höfferlandt Element
+    let scie = document.getElementById("reg-3"); // Declarating Sciermicz Element
+    let aesl = document.getElementById("reg-4"); // Declarating Aeslarent Element
+
+    // Set Default Display Style To None 
+    dorc.style.display = "none";
+    höff.style.display = "none";
+    scie.style.display = "none";
+    aesl.style.display = "none";
+
+    // Set If Conditions
+    if (index == '1') { // If Index 1, Set Dorchester Description Display Style Block
         dorc.style.display = "block"
-        höff.style.display = "none"
-        scie.style.display = "none"
-        aesl.style.display = "none"
-        
-    } else if (index == '2') {
+    } else if (index == '2') { // If Index 2, Set Höfferlandt Description Display Style Block
         höff.style.display = "block"
-        dorc.style.display = "none"
-        scie.style.display = "none"
-        aesl.style.display = "none"
-    } else if (index == '3') {
+    } else if (index == '3') { // If Index 3, Set Scriermicz Description Display Style Block
         scie.style.display = "block"
-        höff.style.display = "none"
-        dorc.style.display = "none"
-        aesl.style.display = "none"
-    } else if (index == '4') {
+    } else { // If Index > 3, Set Aeslarent Description Display Style Block
         aesl.style.display = "block"
-        höff.style.display = "none"
-        scie.style.display = "none"
-        dorc.style.display = "none"
     }
 }
 
+// Execute Function
 imageLoop()
