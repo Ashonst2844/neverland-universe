@@ -194,6 +194,8 @@ nav ul li a {
     display: none;
     background-color: var(--hover-);
     height: 350px;
+    line-height: 25px;
+    overflow-y: auto;
 }
 #map .map-container .map-box .desc-box h3 {
     font: italic 28px;
@@ -203,8 +205,15 @@ nav ul li a {
     text-transform: uppercase;
 }
 #map .map-container .map-box .desc-box p {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
+}
+#map .map-container .map-box .desc-box ul {
+    margin-left: 50px;
+    list-style-type: decimal;
+}
+#map .map-container .map-box .desc-box p b {
+    font-style: italic;
 }
 
 /* Map Overlay
