@@ -397,7 +397,7 @@ footer ul li a .fa-github:hover {
     }
 }
 
-/* LAPTOP TABLET :
+/* TABLET RESOLUTION :
 -------------------------------*/
 
 @media (max-width: 768px) {
@@ -420,7 +420,16 @@ footer ul li a .fa-github:hover {
         font-size: 24px;
     }
     .displayer button {
-        margin-left: 10px;
+        margin-left: 5px;
+    }
+
+    /* Information Overlay
+    -------------------------------*/
+    #info-overlay .info-container .box-1 {
+        width: 30%;
+    }
+    #info-overlay .info-container .box-2 {
+        width: 70%;
     }
 
     /* Map Section
@@ -508,7 +517,7 @@ footer ul li a .fa-github:hover {
     .displayer {
         padding-top: 90px;
         padding-inline: 20px;
-        height: 700px;
+        height: 770px;
     }
     .displayer ul {
         height: 60px;
@@ -536,6 +545,17 @@ footer ul li a .fa-github:hover {
     .displayer button {
         margin: 20px 0 0 0;
         width: 100%;
+    }
+
+    /* Information Overlay
+    -------------------------------*/
+    #info-overlay .info-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #info-overlay .info-container .side {
+        font-size: 10px;
     }
 
     /* Map Section
