@@ -93,7 +93,7 @@ nav ul li a {
     padding: 10px;
     background-color: var(--main-);
     border-radius: 20px;
-    width: 160px;
+    width: 240px;
 }
 .displayer button a {
     text-decoration: none;
@@ -101,6 +101,9 @@ nav ul li a {
 .displayer button:hover {
     background-color: var(--hover-);
     box-shadow: var(--shadow-);
+}
+.displayer button a i {
+    display: none;
 }
 
 /* Information Overlay
@@ -342,6 +345,11 @@ footer ul li a .fa-github:hover {
 -------------------------------*/
 
 @media (max-width: 1440px) {
+    /* Displayer Section
+    -------------------------------*/
+    .displayer button {
+        width: 210px;
+    }
     /* Character Section
     -------------------------------*/
     #characters .char-container .char-box img {
@@ -368,6 +376,9 @@ footer ul li a .fa-github:hover {
     -------------------------------*/
     .displayer {
         padding-inline: 100px;
+    }
+    .displayer button {
+        width: 160px;
     }
 
     /* Character Section
@@ -517,7 +528,7 @@ footer ul li a .fa-github:hover {
     .displayer {
         padding-top: 90px;
         padding-inline: 20px;
-        height: 770px;
+        height: 640px;
     }
     .displayer ul {
         height: 60px;
@@ -543,8 +554,14 @@ footer ul li a .fa-github:hover {
         font: italic 18px;
     }
     .displayer button {
-        margin: 20px 0 0 0;
-        width: 100%;
+        margin: 12.75px;
+        width: 25% !important;
+    }
+    .displayer button a span {
+        display: none;
+    }
+    .displayer button a i {
+        display: block;
     }
 
     /* Information Overlay
@@ -630,6 +647,9 @@ footer ul li a .fa-github:hover {
     -------------------------------*/
     .displayer img {
         margin-left: 37.5px;
+    }
+    .displayer button {
+        margin: 9.2px;
     }
 
     /* Map Section
