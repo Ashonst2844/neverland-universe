@@ -361,6 +361,12 @@ footer ul li a .fa-github:hover {
 -------------------------------*/
 
 @media (max-width: 1366px) {
+    /* Displayer Section
+    -------------------------------*/
+    .displayer button {
+        width: 180px;
+    }
+
     /* Character Section
     -------------------------------*/
     #characters .char-container .char-box img {
