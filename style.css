@@ -105,6 +105,9 @@ nav ul li a {
 .displayer button a i {
     display: none;
 }
+.displayer #info-overlay button a i {
+    display: block;
+}
 
 /* Information Overlay
 -------------------------------*/
