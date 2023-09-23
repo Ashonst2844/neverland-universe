@@ -1,3 +1,6 @@
+// Import Packages
+const validator = require('validator')
+
 function imageLoop() {
 
     // Characters Name List
