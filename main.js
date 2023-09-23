@@ -1,5 +1,4 @@
 // Import Packages
-const validator = require('validator')
 
 function imageLoop() {
 
@@ -67,3 +66,5 @@ function regionDesc(index) {
 
 // Execute Function
 imageLoop()
+
+const validator = require('validator')
