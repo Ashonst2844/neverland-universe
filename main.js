@@ -2,20 +2,45 @@
 
 function imageLoop() {
 
-    // Characters Name List
-    let names = [
-        "Aarth Van Luiken",
-        "Annatasyah Van Luiken",
-        "Eleanor De Louise",
-        "Marcus Crist Valovell",
-        "Marrionette Van Luiken",
-        "Nathan De Säuberlich"
+    // Characters List
+    let charInfo = [
+        {
+            name: "Aarth Van Luiken",
+            age: 17,
+            from: "Dorchester",
+            label: "Prince Of Dorchester"
+        }, {
+            name: "Annatasyah Van Luiken",
+            age: 17,
+            from: "Dorchester",
+            label: "Princess Of Dorchester"
+        }, {
+            name: "Eleanor De Louise",
+            age: 17,
+            from: "Sciermicz",
+            label: "Princess Of Sciermicz"
+        }, {
+            name: "Marcus Crist Valovell",
+            age: 42,
+            from: "Höfferlandt",
+            label: "King Of Höfferlandt"
+        }, {
+            name: "Marrionette Van Luiken",
+            age: 40,
+            from: "Dorchester",
+            label: "Queen Of Dorchester"
+        }, {
+            name: "Nathan De Säuberlich",
+            age: 45,
+            from: "Aeslarent",
+            label: "King Of Aeslarent"
+        },
     ]
 
     const parent = document.getElementById("char-container"); // Declarating Parent Elements
 
     // Set For Loop 
-    for (let i = 1; i <= names.length; i++) {
+    for (let i = 1; i <= charInfo.length; i++) {
 
         // Create Childs Element And Setting The Class To char-box
         const childs = document.createElement("div");
@@ -23,11 +48,17 @@ function imageLoop() {
 
         // Create Image Element And Make It Syncronyz To index
         const image = document.createElement("img");
-        image.setAttribute("src", "img/Characters/"+i+".jpeg")
+        image.setAttribute("src", "img/Characters/" + i + ".jpeg")
+        image.className = "image" + i
 
         // Create Name Caption To Image
-        const caption = document.createElement("figcaption");
-        caption.innerText = names[i - 1]
+        const caption = document.createElement("p");
+        caption.className = "caption" + i
+        caption.innerHTML = `<span>${charInfo[i-1].name}</span><br><span>${charInfo[i-1].age} Tahun</span><br><span>Dari ${charInfo[i-1].from}</span><br><span>${charInfo[i-1].label}</span><br>` // charInfo[i - 1].from + "<br>" + charInfo[i - 1].label
+
+        // Create Characters Information
+        // const paragraph = document.createElement("p");
+
         
         // Append Image & Caption To Childs Element
         childs.appendChild(image)

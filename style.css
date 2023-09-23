@@ -276,20 +276,29 @@ nav ul li a {
     margin-top: 10px;
 }
 #characters .char-container .char-box img {
+    filter: grayscale(100%);
     width: 100%;
     margin: auto;
     height: 250px;
-    filter: grayscale(100%);
 }
 #characters .char-container .char-box img:hover {
-    filter: none;
     cursor: pointer;
+    filter: none;
 }
-#characters .char-container .char-box figcaption {
-    font: italic bold 18px;
-    margin: -30px 0 0 10px;
+#characters .char-container .char-box p {
+    font: italic 18px/20px;
     text-shadow: var(--shadow-);
+    display: none;
+    background-color: #181818;
+    padding: 10px;
+    transition: none;
+    text-align: center;
 }
+#characters .char-container .char-box p span:nth-child(1),
+#characters .char-container .char-box p span:nth-child(7) {
+    font-weight: bold;
+}
+
 
 /* Credits Section
 -------------------------------*/
@@ -346,6 +355,9 @@ footer ul li a .fa-github:hover {
 footer ul li a .fa-discord:hover {
     color: rgb(54, 67, 245);
 }
+footer ul li a .fa-linkedin:hover {
+    color: rgb(131, 139, 255);
+}
 
 /* LAPTOP L RESOLUTION :
 -------------------------------*/
@@ -398,9 +410,8 @@ footer ul li a .fa-discord:hover {
     #characters .char-container .char-box img {
         height: 204.8px;
     }
-    #characters .char-container .char-box figcaption {
+    #characters .char-container .char-box p {
         font-size: 14px;
-        margin-left: 5px;
     }
 
     /* Map Section
@@ -478,8 +489,8 @@ footer ul li a .fa-discord:hover {
     #characters .char-container .char-box img {
         height: 192px;
     }
-    #characters .char-container .char-box figcaption {
-        font-size: 14px;
+    #characters .char-container .char-box p {
+        font-size: 12px;
         margin-left: 0;
     }
 }
@@ -728,8 +739,8 @@ footer ul li a .fa-discord:hover {
     #characters .char-container .char-box img {
         height: 160px;
     }
-    #characters .char-container .char-box figcaption {
-        font-size: 12px;
+    #characters .char-container .char-box p {
+        font-size: 10px;
     }
 
     /* Credit Section

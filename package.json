@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Ashonst2844/neverland-universe#readme",
   "dependencies": {
+    "jquery": "^3.7.1",
     "validator": "^13.11.0"
   }
 }
