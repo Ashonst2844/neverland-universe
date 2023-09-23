@@ -343,6 +343,9 @@ footer ul li a .fa-instagram:hover {
 footer ul li a .fa-github:hover {
     color: rgb(0, 0, 0);
 }
+footer ul li a .fa-discord:hover {
+    color: rgb(54, 67, 245);
+}
 
 /* LAPTOP L RESOLUTION :
 -------------------------------*/
