@@ -58,11 +58,29 @@ nav ul li {
     font: 26px/70px Verdana;
     padding-inline: 20px;
 }
+nav ul li i {
+    padding: 5px;
+}
 nav ul li:hover {
     background-color: var(--hover-);
 }
 nav ul li a {
     text-decoration: none;
+}
+nav ul li .drop-ls {
+    display: none;
+    position: absolute;
+}
+nav ul li .drop-ls a {
+    display: block;
+    background-color: var(--main-);
+    padding: 5px 20px;
+}
+nav ul li .drop-ls a:hover {
+    background-color: var(--hover-);
+}
+.dropdown:hover .drop-ls {
+    display: block;
 }
 
 /* Displayer Section
