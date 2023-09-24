@@ -220,6 +220,7 @@ nav ul li .drop-ls a:hover {
     height: 350px;
     line-height: 25px;
     overflow-y: auto;
+    padding: 20px;
 }
 #map .map-container .map-box .desc-box h3 {
     font: italic 28px;
