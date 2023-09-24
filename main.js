@@ -97,5 +97,3 @@ function regionDesc(index) {
 
 // Execute Function
 imageLoop()
-
-const validator = require('validator')
