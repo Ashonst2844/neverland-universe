@@ -377,6 +377,56 @@ footer ul li a .fa-linkedin:hover {
     color: rgb(131, 139, 255);
 }
 
+/* Join Section
+-------------------------------*/
+#register:target {
+    display: block;
+}
+#login:target {
+    display: block;
+}
+.join-container {
+    width: 500px;
+    height: 600px;
+    background-color: var(--main-);
+    display: absolute;
+    margin: 15px auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow-);
+}
+.join-container .join-box {
+    width: 500px;
+    height: 600px;
+    padding: 30px;
+    display: none;
+}
+.join-container .join-box h2 {
+    font: bold 32px/60px Verdana;
+    text-align: center;
+}
+.join-container .join-box form input{
+    width: 100%;
+    font-size: 18px;
+    background-color: var(--bg-);
+    padding: 10px;
+    border-radius: 30px;
+    margin: 20px 0;
+}
+.join-container .join-box form button {
+    width: 50%;
+    font-size: 20px;
+    background-color: var(--bg-);
+    padding: 10px;
+    float: left;
+    margin-top: 100px;
+}
+.join-container .join-box form button a {
+    text-decoration: none;
+}
+.join-container .join-box form button:hover {
+    background-color: var(--hover-2-);
+}
+
 /* LAPTOP L RESOLUTION :
 -------------------------------*/
 
