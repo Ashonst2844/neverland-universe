@@ -1,9 +1,7 @@
-// Import Packages
-
 function imageLoop() {
 
     // Characters List
-    let charInfo = [
+    let charData = [
         {
             name: "Aarth Van Luiken",
             age: 17,
@@ -40,7 +38,7 @@ function imageLoop() {
     const parent = document.getElementById("char-container"); // Declarating Parent Elements
 
     // Set For Loop 
-    for (let i = 1; i <= charInfo.length; i++) {
+    for (let i = 1; i <= charData.length; i++) {
 
         // Create Childs Element And Setting The Class To char-box
         const childs = document.createElement("div");
@@ -54,7 +52,7 @@ function imageLoop() {
         // Create Name Caption To Image
         const caption = document.createElement("p");
         caption.className = "caption" + i
-        caption.innerHTML = `<span>${charInfo[i-1].name}</span><br><span>${charInfo[i-1].age} Tahun</span><br><span>Dari ${charInfo[i-1].from}</span><br><span>${charInfo[i-1].label}</span><br>` // charInfo[i - 1].from + "<br>" + charInfo[i - 1].label
+        caption.innerHTML = `<span>${charData[i-1].name}</span><br><span>${charData[i-1].age} Tahun</span><br><span>Dari ${charData[i-1].from}</span><br><span>${charData[i-1].label}</span><br>` // charInfo[i - 1].from + "<br>" + charInfo[i - 1].label
 
         // Create Characters Information
         // const paragraph = document.createElement("p");
@@ -66,6 +64,8 @@ function imageLoop() {
 
         // Append Child To Parent Element
         parent.appendChild(childs)
+
+        console.log(charData.char)
     }
 }
 
