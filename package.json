@@ -19,5 +19,9 @@
   "dependencies": {
     "nodejs": "^0.0.0",
     "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }
