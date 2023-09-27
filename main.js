@@ -1,5 +1,4 @@
 function imageLoop() {
-
     // Characters List
     let charData = [
         {
