@@ -168,7 +168,24 @@
         <div id="characters">
             <h2 class="subhead">Karakter :</h2>
             <div class="char-container" id="char-container">
-                <!---- imageLoop() Function Will Run Here!! ---->
+                <?php
+
+                $charData = file_get_contents("char-data.json");
+                $characters = json_decode($charData, true);
+
+                for ($i = 0; $i < count($characters); $i++) {
+                    echo '<div class="char-box">
+                    <img class="image' . $characters[$i]["index"] . '" src="img/Characters/' . $characters[$i]["index"] . '.jpeg">
+                    <p>
+                    <span>' . $characters[$i]["name"] . '</span><br>
+                    <span>' . $characters[$i]["age"] . '</span><br>
+                    <span>' . $characters[$i]["from"] . '</span><br>
+                    <span>' . $characters[$i]["label"] . '</span><br>
+                    </p>
+                    </div>';
+                };
+
+                ?>
             </div>
         </div>
 
