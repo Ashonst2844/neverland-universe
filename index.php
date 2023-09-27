@@ -176,10 +176,10 @@
                 for ($i = 0; $i < count($characters); $i++) {
                     echo '<div class="char-box">
                     <img class="image' . $characters[$i]["index"] . '" src="img/Characters/' . $characters[$i]["index"] . '.jpeg">
-                    <p>
+                    <p class="caption' . $characters[$i]["index"] . '">
                     <span>' . $characters[$i]["name"] . '</span><br>
-                    <span>' . $characters[$i]["age"] . '</span><br>
-                    <span>' . $characters[$i]["from"] . '</span><br>
+                    <span>' . $characters[$i]["age"] . ' Tahun</span><br>
+                    <span>Dari ' . $characters[$i]["from"] . '</span><br>
                     <span>' . $characters[$i]["label"] . '</span><br>
                     </p>
                     </div>';
