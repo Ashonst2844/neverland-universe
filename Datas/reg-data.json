@@ -1,0 +1,57 @@
+[
+ {
+    "reg": "Dorchester",
+    "ikl": "Tropis",
+    "sis": "Monarki Konstitusional",
+    "kar": "Dorchester adalah negara paling yang terbuka, yang menciptakan hubungan yang sangat erat dengan negara lain.",
+    "geo": "Dataran Dorchester sangat indah, bunga warna-warni menyelimuti beberapa wilayah di negara ini, Dorchester dikelilingi oleh pegunungan yang menjulang tinggi, bahkan gunung tertinggi yang sangat bersejarah berada di negara ini",
+    "prof": "[Pedagang, Petani, Nelayan, Pemburu]",
+    "dat": "luas Dorchester adalah sekitar ±6,95 juta Km² dengan jumlah penduduk hanya ±8 juta jiwa.",
+    "prov": [
+        "Central Dorchester : [Arial City, Cantera Town, Virgia City, Librana Wasteland]",
+        "West Dorchester : [Aquoust Harbor, Piscia Town, Sagitia Town, Capricia City]",
+        "East Dorchester : [Scorpia City, Leox Land, Geminia Town, Torro Town]"
+    ]
+ }, {
+    "reg": "Höfferlandt",
+    "ikl": "Tropis",
+    "sis": "Monarki Konstitusional",
+    "kar": "Höfferlandt adalah negara yang tidak cukup berkembang jika dibandingkan dengan negara-negara tetangganya, bentuk struktur bangunannya, budaya leluhurnya masih sangat kuno disana, oleh karena itu, Höfferlandt menjadi negara yang cukup tertutup, tetapi negara ini adalah negara yang paling indah di Vollenvorth.",
+    "geo": "Daratan Höfferlandt memiliki dua wajah, Sebelah utara sebagai dataran yang dipenuhi dengan pepohonan dan pantai sedangkan di sebelah selatan yang diselimuti dengan padang pasir yang tandus dan oasis beberapa titik di selatan.",
+    "prof": "Utara = [Nelayan, Petani, Pedagang] || Selatan = [Pengemara, Penjual Unta, Pedagang]",
+    "dat": "Höfferlandt adalah negara paling terkecil di Vollenvorth tetapi memiliki penduduk padat, luasnya hanya mencapai ±3,9 dan memiliki penduduk ±7 juta jiwa.",
+    "prov": [
+        "Friaize : [Monorith Town, Forbidden Badlands]",
+        "Arlbech : [Vorakh Town, Diluçon Valley, Villión Town]",
+        "Le Cathèl : [Astrunada City, Lunara City]",
+        "Flandre : [Caravan City, Nariyah City]"
+    ]
+ }, {
+    "reg": "Sciermicz",
+    "ikl": "Tropis",
+    "sis": "Monarki Konstitusional",
+    "kar": "Sciermicz adalah negara yang sangat terbuka, ia memiliki hubungan yang erat dengan negara lain karena sering membantu negara yang sedang dalam masa sulit.",
+    "geo": "Dengan datarannya yang rendah Sciermicz adalah negara yang memiliki wilayah terbesar diantara semua negara di benua Vollenvorth, tetapi dengan jumlah penduduk yang cukup sedikit, hampir seluruh wilayahnya dipenuhi dengan rerumputan yang hijau dan hutan belantara yang luas.",
+    "prof": "[Pedagang, Pengrajin Kayu, Pengembara]",
+    "dat": "luas Sciermicz adalah ±7,55 juta Km² dengan jumlah penduduk hanya ±8,6 juta  jiwa.",
+    "prov": [
+        "Northwich : [Ashér City, Mount Fjördth]",
+        "Béthune : [Viedma City, Jimara City]",
+        "Autréche : [Bithvia City, Sigils Land]",
+        "Alttentheich : [Xioth Waste, Nivara City, Tigma City]",
+        "Auxérre : [Bovus Valley, Venyr City]"
+    ]
+ }, {
+    "reg": "Aeslarenth",
+    "ikl": "Dingin",
+    "sis": "Monarki Mutlak",
+    "kar": "Aeslarenth adalah negara yang sangat tertutup, namun, walaupun tertutup, ia tetap akan membantu negara lain jika dalam masalah yang mendesak, dan kebiasaan dari negara ini adalah wajibnya bagi anak laki-laki untuk mendapatkan pendidikan wajib militer sejak dini, oleh sebab itu, negara Aeslarenth adalah negara paling kuat di Vollevorth.",
+    "geo": "Aeslarenth memiliki cuaca yang sangat dingin hampir sekitar 70% wilayah disini selalu ditutupi salju, dan dikelilingi dengan gunung yang tinggi dan lembah yang sangat curam, menambah kesan dari besarnya kekuatan dan kengerian negara ini.",
+    "prof": "[Militer, Pedagang]",
+    "dat": "Luas dari negara ini adalah ±4,2 juta Km², dengan jumlah penduduk ±6,3 juta jiwa.",
+    "prov": [
+        "Röchdale : [Savansa Town, Viraaz Town, Northem Valley]",
+        "Amarath : [Blythery Canyon, Northhollow, Ecrin Town, Cryis Town]"
+    ]
+ }
+]

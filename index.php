@@ -94,70 +94,30 @@
                         <input type="radio" name="reg" id="aeslarent" value="aeslarent" onclick="regionDesc('4')"><label for="aeslarent">Aeslarent</label>
                     </div>
                     <!---- Regions Description ---->
-                    <div class="desc-box" id="reg-1">
-                        <h3>Dorchester</h3>
-                        <pPedagang><b>Iklim</b> : Tropis<br>
-                        <b>Sistem Pemerintahan</b> : Monarki Konstitusional<br>
-                        <b>Karakteristik</b> : Dorchester adalah negara paling yang terbuka, yang menciptakan hubungan yang sangat erat dengan negara lain.<br> 
-                        <b>Geografi</b> : Dataran Dorchester sangat indah, bunga warna-warni menyelimuti beberapa wilayah di negara ini, Dorchester dikelilingi oleh pegunungan yang menjulang tinggi, bahkan gunung tertinggi yang sangat bersejarah berada di negara ini.<br>
-                        <b>Profesi</b> : [Pedagang, Petani, Nelayan, Pemburu]<br>
-                        <b>Data</b> : luas Dorchester adalah sekitar ±6,95 juta Km² dengan jumlah penduduk hanya ±8 juta jiwa.<br>
-                        <b>Provinsi</b> :
-                        <ul>
-                            <li>Central Dorchester : [Arial City, Cantera Town, Virgia City, Librana Wasteland]</li>
-                            <li>West Dorchester : [Aquoust Harbor, Piscia Town, Sagitia Town, Capricia City]</li>
-                            <li>East Dorchester : [Scorpia City, Leox Land, Geminia Town, Torro Town]</li>
-                        </ul></p>
-                    </div>
-                    <div class="desc-box" id="reg-2">
-                        <h3>Höfferlandt</h3>
-                        <p><b>Iklim</b> : Tropis<br>
-                        <b>Sistem Pemerintahan</b> : Monarki Konstitusional<br>
-                        <b>Karakteristik</b> : Höfferlandt adalah negara yang tidak cukup berkembang jika dibandingkan dengan negara-negara tetangganya, bentuk struktur bangunannya, budaya leluhurnya masih sangat kuno disana, oleh karena itu, Höfferlandt menjadi negara yang cukup tertutup, tetapi negara ini adalah negara yang paling indah di Vollenvorth.<br> 
-                        <b>Geografi</b> : Daratan Höfferlandt memiliki dua wajah, Sebelah utara sebagai dataran yang dipenuhi dengan pepohonan dan pantai sedangkan di sebelah selatan yang diselimuti dengan padang pasir yang tandus dan oasis beberapa titik di selatan.<br>
-                        <b>Profesi</b> :<br>
-                        ->Utara : [Nelayan, Petani, Pedagang]<br>
-                        ->Selatan : [Pengemara, Penjual Unta, Pedagang]<br>
-                        <b>Data</b> : Höfferlandt adalah negara paling terkecil di Vollenvorth tetapi memiliki penduduk padat, luasnya hanya mencapai ±3,9 dan memiliki penduduk ±7 juta jiwa.<br>
-                        <b>Provinsi</b> :
-                        <ul>
-                            <li>Friaize : [Monorith Town, Forbidden Badlands]</li>
-                            <li>Arlbech : [Vorakh Town, Diluçon Valley, Villión Town]</li>
-                            <li>Le Cathèl : [Astrunada City, Lunara City]</li>
-                            <li>Flandre : [Caravan City, Nariyah City]</li>
-                        </ul></p>
-                    </div>
-                    <div class="desc-box" id="reg-3">
-                        <h3>Sciermicz</h3>
-                        <Pedagang><b>Iklim</b> : Tropis<br>
-                        <b>Sistem Pemerintahan</b> : Monarki Konstitusional<br>
-                        <b>Karakteristik</b> : Sciermicz adalah negara yang sangat terbuka, ia memiliki hubungan yang erat dengan negara lain karena sering membantu negara yang sedang dalam masa sulit.<br>
-                        <b>Geografi</b> : Dengan datarannya yang rendah Sciermicz adalah negara yang memiliki wilayah terbesar diantara semua negara di benua Vollenvorth, tetapi dengan jumlah penduduk yang cukup sedikit, hampir seluruh wilayahnya dipenuhi dengan rerumputan yang hijau dan hutan belantara yang luas.<br>
-                        <b>Profesi</b> : [Pedagang, Pengrajin Kayu, Pengembara]<br>
-                        <b>Data</b> : luas Sciermicz adalah ±7,55 juta Km² dengan jumlah penduduk hanya ±8,6 juta  jiwa.<br>
-                        <b>Provinsi</b> :
-                        <ul>
-                            <li>Northwich : [Ashér City, Mount Fjördth]</li>
-                            <li>Béthune : [Viedma City, Jimara City]</li>
-                            <li>Autréche : [Bithvia City, Sigils Land]</li>
-                            <li>Alttentheich : [Xioth Waste, Nivara City, Tigma City]</li>
-                            <li>Auxérre : [Bovus Valley, Venyr City]</li>
-                        </ul></p>
-                    </div>
-                    <div class="desc-box" id="reg-4">
-                        <h3>Aeslarent</h3>
-                        <Militer><b>Iklim</b> : Dingin<br>
-                        <b>Sistem Pemerintahan</b> : Monarki Mutlak<br>
-                        <b>Karakteristik</b> : Aeslarenth adalah negara yang sangat tertutup, namun, walaupun tertutup, ia tetap akan membantu negara lain jika dalam masalah yang mendesak, dan kebiasaan dari negara ini adalah wajibnya bagi anak laki-laki untuk mendapatkan pendidikan wajib militer sejak dini, oleh sebab itu, negara Aeslarenth adalah negara paling kuat di Vollevorth.<br> 
-                        <b>Geografi</b> : Aeslarenth memiliki cuaca yang sangat dingin hampir sekitar 70% wilayah disini selalu ditutupi salju, dan dikelilingi dengan gunung yang tinggi dan lembah yang sangat curam, menambah kesan dari besarnya kekuatan dan kengerian negara ini.<br>
-                        <b>Profesi</b> : [Militer, Pedagang]<br>
-                        <b>Data</b> : Luas dari negara ini adalah ±4,2 juta Km², dengan jumlah penduduk ±6,3 juta jiwa<br>
-                        <b>Provinsi</b> :
-                        <ul>
-                            <li>Röchdale : [Savansa Town, Viraaz Town, Northem Valley]</li>
-                            <li>Amarath : [Blythery Canyon, Northhollow, Ecrin Town, Cryis Town]</li>
-                        </ul></p>
-                    </div>
+                    <?php
+
+                    $regData = file_get_contents("Datas/reg-data.json");
+                    $regions = json_decode($regData, true);
+
+                    for ($i = 0; $i < count($regions); $i++) {
+                        echo '<div class="desc-box" id="reg-' . ($i + 1) . '">
+                        <h3>' . $regions[$i]["reg"] . '</h3>
+                        <p><b>Iklim : </b>' . $regions[$i]["ikl"] . '<br></p>
+                        <b>Sistem Pemerintahan : </b>' . $regions[$i]["sis"] . '<br>
+                        <b>Karakteristik : </b>' . $regions[$i]["kar"] . '<br>
+                        <b>Geografi : </b>' . $regions[$i]["geo"] . '<br>
+                        <b>Profesi : </b>' . $regions[$i]["prof"] . '<br>
+                        <b>Data : </b>' . $regions[$i]["dat"] . '<br>
+                        <b>Provinsi : </b>
+                        <ul>';
+                        for ( $j = 0; $j < count($regions[$i]["prov"]); $j++) {
+                            echo '<li>' . $regions[$i]["prov"][$j] . '</li>';
+                        };
+                        echo '</ul></p>
+                        </div>';
+                    };
+
+                    ?>
                 </div>
             </div>
         </div>
@@ -170,7 +130,7 @@
             <div class="char-container" id="char-container">
                 <?php
 
-                $charData = file_get_contents("char-data.json");
+                $charData = file_get_contents("Datas/char-data.json");
                 $characters = json_decode($charData, true);
 
                 for ($i = 0; $i < count($characters); $i++) {
@@ -195,54 +155,23 @@
         <div id="credits">
             <h2 class="subhead">Kredit :</h2>
             <div class="credits-container">
-                <div class="credits-box">
-                    <h4>Story/Idea Planner:</h4>
-                    <ul>
-                        <li>Masagus Ahmad R.</li>
-                        <li>Irsan Atha Khalid</li>
-                    </ul>
-                </div>
-                <div class="credits-box">
-                    <h4>Cover Artist:</h4>
-                    <ul>
-                        <li>Masagus Ahmad R.</li>
-                    </ul>
-                </div>
-                <div class="credits-box">
-                    <h4>Writer:</h4>
-                    <ul>
-                        <li>Masagus Ahmad R.</li>
-                    </ul>
-                </div>
-                <div class="credits-box">
-                    <h4>Proofreaders:</h4>
-                    <ul>
-                        <li>Jakaria Arjuna Dipa</li>
-                        <li>M. Fabian Ali Messi</li>
-                    </ul>
-                </div>
-                <div class="credits-box">
-                    <h4>Illustrators:</h4>
-                    <ul>
-                        <li>Masagus Ahmad R.</li>
-                        <li>Fatimah Az Azahra Isk.</li>
-                    </ul>
-                </div>
-                <div class="credits-box">
-                    <h4>Reviewer/Advisor:</h4>
-                    <ul>
-                        <li>M. Adli Banyu</li>
-                        <li>M. Fabian Ali Messi</li>
-                        <li>Irsan Atha Khalid</li>
-                    </ul>
-                </div>
-                <div class="credits-box">
-                    <h4>Translator:</h4>
-                    <ul>
-                        <li>M. Adli Banyu</li>
-                        <li>Latetia Irene Satriawan</li>
-                    </ul>
-                </div>
+                <?php
+
+                $creditData = file_get_contents("Datas/credit-data.json");
+                $credits = json_decode($creditData, true);
+
+                for ($i = 0; $i < count($credits); $i++) {
+                    echo '<div class="credits-box">
+                    <h4>' . $credits[$i]["role"] . ' :</h4>
+                    <ul>';
+                    for ( $j = 0 ; $j < count($credits[$i]["names"]); $j++) {
+                        echo '<li>' . $credits[$i]["names"][$j] . '</li>';
+                    };
+                    echo '</ul>
+                    </div>';
+                };
+
+                ?>
             </div>
         </div>
 

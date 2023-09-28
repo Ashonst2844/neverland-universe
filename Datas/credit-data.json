@@ -1,0 +1,21 @@
+[
+    {
+        "role": "Story/Idea Planner",
+        "names": ["Masagus Ahmad Ramadhan", "Irsan Atha Khalid"]
+    }, {
+        "role": "Cover Artist",
+        "names": ["Masagus Ahmad Ramadhan"]
+    }, {
+        "role": "Writer",
+        "names": ["Masagus Ahmad Ramadhan"]
+    }, {
+        "role": "Proofreaders",
+        "names": ["M. Fabian Ali Messi", "Jakaria Arjuna Dipa"]
+    }, {
+        "role": "Illustrators",
+        "names": ["Masagus Ahmad Ramadhan", "Fatimah Az Zahra Isk."]
+    }, {
+        "role": "Reviewer/Advisor",
+        "names": ["M. Adli Banyu Ardana", "M. Fabian Ali Messi", "Irsan Atha Khalid"]
+    }
+]
