@@ -35,5 +35,11 @@
         "age": 45,
         "from": "Aeslarent",
         "label": "King Of Aeslarent"
+    }, {
+        "index": 7,
+        "name": "Istvan De Säuberlich",
+        "age": 19,
+        "from": "Aeslarent",
+        "label": "Prince Of Aeslarent"
     }
 ]
