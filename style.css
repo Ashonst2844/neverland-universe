@@ -1,5 +1,10 @@
 /* Core
 -------------------------------*/
+@font-face {
+    font-family: 'Pacifico';
+    src: url("font/Pacifico/Pacifico-Regular.ttf");
+}
+
 :root {
     --bg-: #232323;
     --main-: #181818;
@@ -81,6 +86,19 @@ nav ul li .drop-ls a:hover {
 }
 .dropdown:hover .drop-ls {
     display: block;
+}
+.logo {
+    margin: 5px 20px;
+    height: 60px;
+    float: right;
+}
+.logo img {
+    float: left;
+    margin: 0;
+    margin-right: -15px;
+}
+.logo span {
+    font: italic 24px/60px 'Pacifico', sans-serif;
 }
 
 /* Displayer Section
@@ -506,8 +524,17 @@ footer ul li a .fa-linkedin:hover {
 @media (max-width: 768px) {
     /* Navigation Section
     -------------------------------*/
-    nav ul li a {
+    nav ul li {
         font-size: 18px;
+    }
+    nav .logo {
+        margin-right: 5px;
+    }
+    nav .logo img {
+        margin: 0;
+    }
+    nav .logo span {
+        display: none;
     }
 
     /* Displayer Section
@@ -611,8 +638,11 @@ footer ul li a .fa-linkedin:hover {
     nav ul li:hover {
         background-color: var(--hover-);
     }
-    nav ul li a {
+    nav ul li {
         font-size: 22px;
+    }
+    nav .logo {
+        display: none;
     }
 
     /* Displayer Section

@@ -29,6 +29,10 @@
                         <a href="join.html#login">Log-in</a>
                     </div>
                 </li>
+                <div class="logo">
+                    <img class="logo" img src="img/logo.png" alt="Logo">
+                    <span>ueen's</span>
+                </div>
             </ul>
         </nav>
 
