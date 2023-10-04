@@ -41,6 +41,31 @@ body {
     text-decoration: underline;
 }
 
+/* Go To Top Button
+-------------------------------*/
+.gotop {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    z-index: 200;
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-2-);
+    border: 3px solid var(--bg-);
+    border-radius: 50%;
+    padding-inline: 18px;
+    opacity: 0.5;
+}
+.gotop:hover {
+    background-color: var(--bg-);
+    border-color: var(--main-2-);
+    opacity: 1;
+}
+.gotop i {
+    font-size: 24px;
+    line-height: 60px;
+}
+
 /* DEFAULT RESOLUTION :
 -------------------------------*/
 

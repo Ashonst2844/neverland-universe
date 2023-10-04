@@ -12,7 +12,8 @@
         <script src="https://kit.fontawesome.com/7ea424b8bb.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
+        <!---- GoToTop Button ---->
+        <a href="#main"><div class="gotop"><i class="fa-solid fa-arrow-up"></i></div></a>
         <!---- Navigation Section ---->
         <nav>
             <input type="checkbox" name="check" id="check">
