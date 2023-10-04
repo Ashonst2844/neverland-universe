@@ -25,4 +25,3 @@ function regionDesc(index) {
 }
 
 // Execute Function
-imageLoop()

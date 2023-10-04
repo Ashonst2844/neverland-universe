@@ -33,13 +33,19 @@
         "index": 6,
         "name": "Nathan De Säuberlich",
         "age": 45,
-        "from": "Aeslarent",
-        "label": "King Of Aeslarent"
+        "from": "Aeslarenth",
+        "label": "King Of Aeslarenth"
     }, {
         "index": 7,
         "name": "Istvan De Säuberlich",
         "age": 19,
-        "from": "Aeslarent",
-        "label": "Prince Of Aeslarent"
+        "from": "Aeslarenth",
+        "label": "Prince Of Aeslarenth"
+    }, {
+        "index": 8,
+        "name": "Sergio Van Luiken",
+        "age": 44,
+        "from": "Dorchester",
+        "label": "King Of Dorchester"
     }
 ]

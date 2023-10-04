@@ -96,7 +96,7 @@
                         <input type="radio" name="reg" id="dorchester" value="dorchestre" onclick="regionDesc('1')"><label for="dorchester">Dorchester</label>
                         <input type="radio" name="reg" id="höfferlandt" value="höfferlandt" onclick="regionDesc('2')"><label for="höfferlandt">Höfferlandt</label>
                         <input type="radio" name="reg" id="sciermicz" value="sciermicz" onclick="regionDesc('3')"><label for="sciermicz">Sciermicz</label>
-                        <input type="radio" name="reg" id="aeslarent" value="aeslarent" onclick="regionDesc('4')"><label for="aeslarent">Aeslarent</label>
+                        <input type="radio" name="reg" id="aeslarenth" value="aeslarenth" onclick="regionDesc('4')"><label for="aeslarenth">Aeslarenth</label>
                     </div>
                     <!---- Regions Description ---->
                     <?php
