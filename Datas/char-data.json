@@ -47,5 +47,11 @@
         "age": 44,
         "from": "Dorchester",
         "label": "King Of Dorchester"
+    }, {
+        "index": 9,
+        "name": "Istvan De Säuberlich",
+        "age": 41,
+        "from": "Aeslarenth",
+        "label": "Queen Of Aeslarenth"
     }
 ]
