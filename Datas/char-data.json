@@ -49,9 +49,15 @@
         "label": "King Of Dorchester"
     }, {
         "index": 9,
-        "name": "Istvan De Säuberlich",
+        "name": "Veronica De Säuberlich",
         "age": 41,
         "from": "Aeslarenth",
         "label": "Queen Of Aeslarenth"
+    }, {
+        "index": 10,
+        "name": "Teffany Duchess Valovell",
+        "age": 17,
+        "from": "Höfferlandt",
+        "label": "Princess Of Höfferlandt"
     }
 ]
